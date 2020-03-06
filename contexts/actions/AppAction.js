@@ -23,7 +23,7 @@ const AppAction = {
 
       // Success
       if (res.token) {
-        AsyncStorage.setItem("token", token);
+        AsyncStorage.setItem("token", res.token);
         LocalStorage.token = res.token;
       }
     }
